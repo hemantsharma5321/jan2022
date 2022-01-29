@@ -76,7 +76,7 @@
 // //   //     document.write(finalData.activeCasesNew);
 // //   //   });
   
-  var newURL = "http://universities.hipolabs.com/search?country=india";
+  var newURL = "https://universities.hipolabs.com/search?country=india";
   
   // fetch(newURL)
   //   .then((something) => something.json())
