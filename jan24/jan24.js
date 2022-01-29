@@ -88,7 +88,7 @@
   var table = document.getElementById("table");
  
   
-  // url = "http://uniies.hipolabs.com/search?country=india";
+  // url = "https://uniies.hipolabs.com/search?country=india";
   fetch(newURL)
     .then((response) => {
       
