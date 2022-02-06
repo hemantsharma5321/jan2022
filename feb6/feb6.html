@@ -7,12 +7,12 @@
     <title>Blogs</title>
     <link rel="stylesheet" href="test.css">
 </head>
-<body>
+<body onload="show()">
     <div id="banner">
         <div>
         <p><h1>Publish Your Passions,Your Way</h1></p>
         <p><h3>Create a Unique and beautiful blog,its easy and Free</h3></p>
-        <span><a id="createbtn" href="create.html">Create your Blog</a></span>
+        <span onclick="showcreate()"><a id="createbtn" >Create your Blog</a></span>
     </div>
     </div>
 
@@ -25,9 +25,29 @@
     </nav>
     <div class="container" id="container">
         <!--posts goes here-->
+         <!-- <div class="post">
+            <h3 id="title">${all_posts[i].title}</h3>
+            <p id="date"><span>Published</span>${date}</p>
+            <div class="postbtns">
+                <button id="delbtn">Delete</button>
+                <button id="previewbtn">Preview</button>
+                <button id="updatebtn">Edit</button>
+            </div>
+         </div> -->
         
     </div>
-    <button id="createbtn2" title="create Blog"><a href="create.html">+</a></button>
+
+    <div class="preview dnone" id="preview">
+        <h3 id="prevtitle"></h3>
+        <p id="prevcontent"></p>
+    </div>
+
+    <div id="createblog" class="dnone">
+        <input type="text" id="titleinput" placeholder="Title"><br><br>
+    <textarea placeholder="Type content here" name="content" id="contentinput" cols="100" rows="30"></textarea><br>
+    <button id="publishbtn" type="submit" onclick="publish()">Publish</button>
+    </div>
+    <button onclick="showcreate()" id="createbtn2" title="create Blog" >+</button>
 
     <script src="test.js"></script>
 </body>
